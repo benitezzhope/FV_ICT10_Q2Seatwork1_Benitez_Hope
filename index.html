@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Seatwork #1</title>
+    <style>
+
+       body { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  background: url(https://i.pinimg.com/1200x/22/97/40/229740d488b5f14406f29bdec13bb6e4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+     #firstbox{
+
+        background-color: rgb(228, 234, 250);
+        width: 600px;
+        height: 400px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 180px;
+       border-radius: 15px;
+       text-align: center;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+
+    input{
+        width: 400px;
+        height: 50px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        text-align: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: rgb(130, 130, 130);
+        font-size: 15px;
+
+    }
+
+    button{
+        width: 150px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        border: none;
+        font-size: 20px;
+        background-color: rgb(155, 184, 210);
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    </style>
+</head>
+<body>
+    <div id="firstbox">
+    <h1 style="color: rgb(155, 184, 210); text-align: center; padding-top: 40px;">CommArts Club Checker</h1>
+    
+    <br>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter first name...">
+    <br><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter last name...">
+    <br><br>
+    <button type="button" py-click="check"><b>Check</b></button>
+
+    <br><br>
+      <p id="result" style="color: rgb(155, 184, 210); font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
+    </div>
+    <script type="py" src="main.py"></script>
+  
+</body>
+</html>
